@@ -23,5 +23,10 @@ namespace Общежитие
             this.studentsTableAdapter.Fill(this.общежитие1DataSet.Students);
 
         }
+
+        private void Update_button_Click(object sender, EventArgs e)
+        {
+            studentsTableAdapter.Update(общежитие1DataSet);
+        }
     }
 }
